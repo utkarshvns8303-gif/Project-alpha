@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-alpha"
+version = "0.1.0"
+description = "AI-assisted mental health call triage MVP"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Project Alpha"}]
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
+
+[project.scripts]
+project-alpha-triage = "project_alpha.cli:main"
